@@ -1,9 +1,10 @@
 package tests;
 
+import base.BaseTest;
 import com.github.javafaker.Faker;
 import org.testng.annotations.Test;
 
-public class FakerTest {
+public class FakerTest extends BaseTest {
 
     @Test
     public void generateFakeData() {

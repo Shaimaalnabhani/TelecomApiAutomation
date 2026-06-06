@@ -1,5 +1,6 @@
 package tests;
 
+import base.BaseTest;
 import config.ConfigReader;
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
@@ -8,8 +9,11 @@ import payloads.UserPayload;
 import services.UserService;
 
 import static org.hamcrest.Matchers.equalTo;
+import org.testng.annotations.Listeners;
+import utils.TestListener;
 
-public class CreateUserTest {
+@Listeners(TestListener.class)
+public class CreateUserTest extends BaseTest {
 
     UserService userService =
             new UserService();
