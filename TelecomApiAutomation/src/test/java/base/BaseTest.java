@@ -11,5 +11,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setup() {
-        RestAssured.baseURI = ConfigReader.getBaseUrl();    }
+        RestAssured.baseURI = ConfigReader.getBaseUrl();
+    //test
+    }
 }
