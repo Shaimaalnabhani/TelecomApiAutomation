@@ -2,8 +2,11 @@ package tests;
 
 import base.BaseTest;
 import com.github.javafaker.Faker;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import reporting.TestListener;
 
+@Listeners(TestListener.class)
 public class FakerTest extends BaseTest {
 
     @Test

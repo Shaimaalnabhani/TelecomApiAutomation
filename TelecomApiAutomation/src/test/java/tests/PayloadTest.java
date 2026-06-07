@@ -1,10 +1,13 @@
 package tests;
 
 import base.BaseTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import payloads.UserPayload;
+import reporting.TestListener;
 import utils.TestDataFactory;
 
+@Listeners(TestListener.class)
 public class PayloadTest extends BaseTest {
 
     @Test
