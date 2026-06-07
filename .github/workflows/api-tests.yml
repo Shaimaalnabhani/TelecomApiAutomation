@@ -29,3 +29,10 @@ jobs:
       - name: Run Tests
         working-directory: TelecomApiAutomation
         run: mvn test
+
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: ExtentReport
+          path: TelecomApiAutomation/reports
